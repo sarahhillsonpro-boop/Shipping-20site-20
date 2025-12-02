@@ -94,7 +94,7 @@ export default function Index() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white overflow-hidden pt-0">
+      <section className="relative bg-primary text-white overflow-hidden pt-0">
         {/* Decorative background elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-20 w-72 h-72 bg-accent rounded-full blur-3xl"></div>

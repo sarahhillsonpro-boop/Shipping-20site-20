@@ -1,4 +1,4 @@
-import { Layout } from "@/components/Layout";
+import { Layout } from "../components/Layout";
 import { BarChart3, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
 

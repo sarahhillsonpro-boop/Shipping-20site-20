@@ -261,6 +261,43 @@ export default function Tracking() {
                   </div>
                 </div>
 
+                {/* Live Location Map */}
+                <div className="mb-8">
+                  <TrackingMap
+                    locations={[
+                      {
+                        name: shipmentData.origin,
+                        lat: 0,
+                        lng: 0,
+                        type: "origin",
+                      },
+                      ...shipmentData.updates
+                        .filter((u) => u.location !== shipmentData.origin && u.location !== shipmentData.currentLocation)
+                        .map((u) => ({
+                          name: u.location,
+                          lat: 0,
+                          lng: 0,
+                          type: "current" as const,
+                          date: u.date,
+                          status: u.status,
+                        })),
+                      {
+                        name: shipmentData.currentLocation,
+                        lat: 0,
+                        lng: 0,
+                        type: "current" as const,
+                      },
+                      {
+                        name: shipmentData.destination,
+                        lat: 0,
+                        lng: 0,
+                        type: "destination",
+                      },
+                    ]}
+                    currentLocation={shipmentData.currentLocation}
+                  />
+                </div>
+
                 {/* Package Details */}
                 <div className="bg-white rounded-lg p-6 border border-border mb-8">
                   <h2 className="text-xl font-semibold text-foreground mb-4">

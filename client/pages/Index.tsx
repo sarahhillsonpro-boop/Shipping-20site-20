@@ -261,31 +261,71 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div
-                key={i}
-                className="bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl overflow-hidden aspect-video flex items-center justify-center border border-primary-200 hover:border-primary-400 transition-colors group cursor-pointer"
-              >
-                <div className="text-center">
-                  {i % 3 === 0 ? (
-                    <>
-                      <Plane className="w-12 h-12 text-primary mx-auto mb-2 group-hover:scale-110 transition-transform" />
-                      <p className="text-sm font-medium text-primary">Air Freight</p>
-                    </>
-                  ) : i % 3 === 1 ? (
-                    <>
-                      <Ship className="w-12 h-12 text-primary mx-auto mb-2 group-hover:scale-110 transition-transform" />
-                      <p className="text-sm font-medium text-primary">Sea Cargo</p>
-                    </>
-                  ) : (
-                    <>
-                      <Truck className="w-12 h-12 text-primary mx-auto mb-2 group-hover:scale-110 transition-transform" />
-                      <p className="text-sm font-medium text-primary">Road Freight</p>
-                    </>
-                  )}
-                </div>
+            <div className="rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
+              <img
+                src="https://images.pexels.com/photos/20016279/pexels-photo-20016279.jpeg"
+                alt="Air Freight - Cargo airplane"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                <p className="text-white font-semibold">Air Freight</p>
               </div>
-            ))}
+            </div>
+
+            <div className="rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
+              <img
+                src="https://images.pexels.com/photos/2226457/pexels-photo-2226457.jpeg"
+                alt="Sea Cargo - Container port"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                <p className="text-white font-semibold">Sea Cargo</p>
+              </div>
+            </div>
+
+            <div className="rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
+              <img
+                src="https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg"
+                alt="Road Freight - Delivery truck"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                <p className="text-white font-semibold">Road Freight</p>
+              </div>
+            </div>
+
+            <div className="rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
+              <img
+                src="https://images.pexels.com/photos/7363196/pexels-photo-7363196.jpeg"
+                alt="Package tracking"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                <p className="text-white font-semibold">Real-Time Tracking</p>
+              </div>
+            </div>
+
+            <div className="rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
+              <img
+                src="https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg"
+                alt="Warehouse management"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                <p className="text-white font-semibold">Warehousing</p>
+              </div>
+            </div>
+
+            <div className="rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
+              <img
+                src="https://images.pexels.com/photos/6169056/pexels-photo-6169056.jpeg"
+                alt="Express delivery"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                <p className="text-white font-semibold">Express Delivery</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

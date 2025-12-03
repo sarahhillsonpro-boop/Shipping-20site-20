@@ -261,7 +261,7 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
+            <div className="relative rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
               <img
                 src="https://images.pexels.com/photos/20016279/pexels-photo-20016279.jpeg"
                 alt="Air Freight - Cargo airplane"
@@ -272,7 +272,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
+            <div className="relative rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
               <img
                 src="https://images.pexels.com/photos/2226457/pexels-photo-2226457.jpeg"
                 alt="Sea Cargo - Container port"
@@ -283,7 +283,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
+            <div className="relative rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
               <img
                 src="https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg"
                 alt="Road Freight - Delivery truck"
@@ -294,7 +294,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
+            <div className="relative rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
               <img
                 src="https://images.pexels.com/photos/7363196/pexels-photo-7363196.jpeg"
                 alt="Package tracking"
@@ -305,7 +305,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
+            <div className="relative rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
               <img
                 src="https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg"
                 alt="Warehouse management"
@@ -316,7 +316,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
+            <div className="relative rounded-xl overflow-hidden aspect-video bg-gray-200 hover:shadow-lg transition-shadow group cursor-pointer">
               <img
                 src="https://images.pexels.com/photos/6169056/pexels-photo-6169056.jpeg"
                 alt="Express delivery"

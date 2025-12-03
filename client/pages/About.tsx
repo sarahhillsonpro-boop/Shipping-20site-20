@@ -26,10 +26,10 @@ export default function About() {
   ];
 
   const team = [
-    { name: "John Smith", role: "CEO & Founder", image: "👔" },
-    { name: "Sarah Johnson", role: "Chief Operations Officer", image: "👩‍💼" },
-    { name: "Michael Chen", role: "Head of Technology", image: "👨‍💻" },
-    { name: "Emma Rodriguez", role: "Director of Customer Service", image: "👩‍🔬" },
+    { name: "John Smith", role: "CEO & Founder", image: "https://images.pexels.com/photos/34987129/pexels-photo-34987129.jpeg" },
+    { name: "Sarah Johnson", role: "Chief Operations Officer", image: "https://images.pexels.com/photos/7363196/pexels-photo-7363196.jpeg" },
+    { name: "Michael Chen", role: "Head of Technology", image: "https://images.pexels.com/photos/5025653/pexels-photo-5025653.jpeg" },
+    { name: "Emma Rodriguez", role: "Director of Customer Service", image: "https://images.pexels.com/photos/6169056/pexels-photo-6169056.jpeg" },
   ];
 
   return (

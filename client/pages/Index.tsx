@@ -153,31 +153,13 @@ export default function Index() {
             </div>
 
             {/* Hero Image */}
-            <div className="relative h-96 md:h-full">
-              <div className="absolute inset-0 bg-gradient-to-tr from-accent/30 to-transparent rounded-2xl overflow-hidden border border-white/20">
-                <svg
-                  viewBox="0 0 400 400"
-                  className="w-full h-full"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  {/* Simplified illustration of a delivery truck */}
-                  <rect x="80" y="200" width="240" height="140" fill="white" opacity="0.1" />
-                  <rect x="100" y="180" width="200" height="60" fill="white" opacity="0.15" />
-                  <circle cx="120" cy="340" r="30" fill="white" opacity="0.2" />
-                  <circle cx="280" cy="340" r="30" fill="white" opacity="0.2" />
-                  <rect x="280" y="140" width="60" height="80" fill="white" opacity="0.1" />
-                  <path
-                    d="M 320 160 L 360 140 L 360 180 Z"
-                    fill="white"
-                    opacity="0.15"
-                  />
-                  {/* Package elements */}
-                  <rect x="130" y="120" width="60" height="60" fill="white" opacity="0.2" />
-                  <rect x="200" y="100" width="50" height="50" fill="white" opacity="0.15" />
-                  <rect x="260" y="110" width="55" height="55" fill="white" opacity="0.2" />
-                </svg>
-              </div>
+            <div className="relative h-96 md:h-full rounded-2xl overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/12820603/pexels-photo-12820603.jpeg"
+                alt="Modern warehouse facility"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
             </div>
           </div>
         </div>

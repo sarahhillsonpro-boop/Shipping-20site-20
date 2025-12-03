@@ -1,6 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { useState } from "react";
 import { Search, MapPin, Clock, Package, Truck, CheckCircle } from "lucide-react";
+import TrackingMap from "@/components/TrackingMap";
 
 interface TrackingUpdate {
   date: string;

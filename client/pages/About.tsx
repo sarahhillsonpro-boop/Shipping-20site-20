@@ -157,11 +157,19 @@ export default function About() {
             {team.map((member, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-6 text-center border border-primary-200 hover:border-primary-400 transition-colors"
+                className="rounded-xl overflow-hidden border border-border hover:border-primary-400 transition-colors"
               >
-                <div className="text-6xl mb-4">{member.image}</div>
-                <h3 className="text-lg font-semibold text-foreground">{member.name}</h3>
-                <p className="text-sm text-muted-foreground">{member.role}</p>
+                <div className="h-64 bg-gray-200 overflow-hidden">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6 bg-white text-center">
+                  <h3 className="text-lg font-semibold text-foreground">{member.name}</h3>
+                  <p className="text-sm text-muted-foreground">{member.role}</p>
+                </div>
               </div>
             ))}
           </div>

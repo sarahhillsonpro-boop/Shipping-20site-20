@@ -45,26 +45,35 @@ export default function About() {
       {/* Company History */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                ShipCo was founded in 1999 with a simple mission: to revolutionize the
-                global logistics industry through innovation and customer-centric service.
-                What started as a small local courier service has grown into one of the
-                world's leading shipping and logistics companies.
-              </p>
-              <p>
-                Over the past 25 years, we've expanded our operations to 195+ countries,
-                invested in cutting-edge technology, and built a team of dedicated
-                professionals committed to excellence. Our success is built on the trust
-                of thousands of businesses that rely on us every single day.
-              </p>
-              <p>
-                Today, we handle over 50 million shipments annually, maintaining a 99.2%
-                on-time delivery rate. We continue to innovate with real-time tracking,
-                AI-powered logistics optimization, and sustainable shipping practices.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  ShipCo was founded in 1999 with a simple mission: to revolutionize the
+                  global logistics industry through innovation and customer-centric service.
+                  What started as a small local courier service has grown into one of the
+                  world's leading shipping and logistics companies.
+                </p>
+                <p>
+                  Over the past 25 years, we've expanded our operations to 195+ countries,
+                  invested in cutting-edge technology, and built a team of dedicated
+                  professionals committed to excellence. Our success is built on the trust
+                  of thousands of businesses that rely on us every single day.
+                </p>
+                <p>
+                  Today, we handle over 50 million shipments annually, maintaining a 99.2%
+                  on-time delivery rate. We continue to innovate with real-time tracking,
+                  AI-powered logistics optimization, and sustainable shipping practices.
+                </p>
+              </div>
+            </div>
+            <div className="rounded-xl overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/12820603/pexels-photo-12820603.jpeg"
+                alt="Modern warehouse facility"
+                className="w-full h-full object-cover rounded-xl"
+              />
             </div>
           </div>
         </div>

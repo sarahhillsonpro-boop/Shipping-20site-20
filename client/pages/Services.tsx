@@ -95,31 +95,45 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => {
               const Icon = service.icon;
+              const images = [
+                "https://images.pexels.com/photos/20016279/pexels-photo-20016279.jpeg",
+                "https://images.pexels.com/photos/2226457/pexels-photo-2226457.jpeg",
+                "https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg",
+                "https://images.pexels.com/photos/5025653/pexels-photo-5025653.jpeg",
+                "https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg",
+                "https://images.pexels.com/photos/6169056/pexels-photo-6169056.jpeg",
+              ];
               return (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-white to-primary-50 rounded-xl p-8 border border-border hover:border-primary-400 hover:shadow-lg transition-all"
+                  className="bg-white rounded-xl overflow-hidden border border-border hover:border-primary-400 hover:shadow-lg transition-all"
                 >
-                  <div className="bg-primary-100 rounded-lg p-3 w-fit mb-4">
-                    <Icon className="w-7 h-7 text-primary" />
+                  <div className="h-40 bg-gray-200 overflow-hidden">
+                    <img
+                      src={images[index % images.length]}
+                      alt={service.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-2">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-6">
-                    {service.description}
-                  </p>
+                  <div className="p-8">
+                    <h3 className="text-xl font-bold text-foreground mb-2">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm mb-6">
+                      {service.description}
+                    </p>
 
-                  <div className="space-y-3 mb-6 border-t border-b border-border py-4">
-                    {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-foreground">{feature}</span>
-                      </div>
-                    ))}
+                    <div className="space-y-3 mb-6 border-t border-b border-border py-4">
+                      {service.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-start gap-2">
+                          <Check className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-foreground">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <p className="text-lg font-bold text-primary">{service.price}</p>
                   </div>
-
-                  <p className="text-lg font-bold text-primary">{service.price}</p>
                 </div>
               );
             })}

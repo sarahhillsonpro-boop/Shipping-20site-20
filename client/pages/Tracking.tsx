@@ -145,8 +145,15 @@ export default function Tracking() {
   return (
     <Layout>
       {/* Header Section */}
-      <section className="bg-gradient-to-r from-primary-700 to-primary-800 text-white py-12 md:py-16">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-r from-primary-700 to-primary-800 text-white py-12 md:py-16 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <img
+            src="https://images.pexels.com/photos/7363196/pexels-photo-7363196.jpeg"
+            alt="Tracking background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-3xl md:text-4xl font-bold mb-2">Track Your Shipment</h1>
           <p className="text-white/90">
             Enter your tracking number to get real-time updates on your package
